@@ -12,6 +12,9 @@ windows-batch-automation/
 ├── Limpar Pasta.bat
 ├── Bloqueio de tela.bat
 ├── data-hora.bat
+├── data-hora.ps1
+├── Politica de Segurança.bat
+├── Executar.bat
 └── README.md
 ```
 
@@ -69,11 +72,47 @@ Script para **atualização e sincronização de data e hora do sistema**, garan
 
 ---
 
+### 🔒 Politica de Segurança.bat
+
+Script em Batch responsável por:
+
+* Aplicar políticas de segurança no Windows
+* Executar scripts PowerShell de forma automatizada
+* Padronizar configurações de segurança em máquinas corporativas
+* Auxiliar no processo de pós-formatação e hardening básico do sistema
+
+---
+
+### ⏰ sincronizar-hora.ps1
+
+Script PowerShell para:
+
+* Configurar o serviço **Windows Time (w32time)**
+* Sincronizar o horário do computador com servidores confiáveis
+* Reiniciar o serviço de horário para aplicar as configurações
+* Corrigir problemas de desvio de data e hora em estações Windows
+
+---
+
+
+### 🔹 Executar.bat
+
+Script principal responsável por:
+
+* Verificar se o script está sendo executado como **Administrador**
+* Chamar scripts PowerShell auxiliares
+* Automatizar a execução de rotinas administrativas
+* Garantir compatibilidade com ambientes corporativos
+
+
+
 ## ⚙️ Requisitos
 
 * Sistema operacional Windows
 * Permissões adequadas para execução dos scripts
 * Alguns scripts podem exigir execução como **Administrador**
+* PowerShell habilitado
+* Política de execução ajustada (`ExecutionPolicy Bypass` quando necessário)
 
 ---
 
@@ -109,3 +148,11 @@ Thiago Ferreira Rovere
 ## 📄 Licença
 
 Este projeto pode ser utilizado e adaptado livremente conforme necessidade.
+Scripts desenvolvidos para uso em **ambientes corporativos**, visando **agilidade, padronização e segurança** em tarefas de TI.
+
+
+
+
+
+
+
